@@ -1,0 +1,16 @@
+node_modules/
+client/dist/
+.env
+
+# Dados de runtime: contas (hash de senha), conversas e erros. Em produção vivem
+# no volume do Railway (DATA_DIR=/data); em dev, em server/data/.
+server/data/
+
+
+# PROMPTS: nunca no repositório (ele é público e os prompts têm o gabarito dos
+# casos). Os arquivos prontos para subir ficam em .prompts/; em produção vão pelo
+# painel Administração → Prompts e moram no volume (DATA_DIR/prompts).
+.prompts/
+.project/
+# Testes e fixtures reproduzem o formato dos prompts: ficam só na máquina local.
+tests/

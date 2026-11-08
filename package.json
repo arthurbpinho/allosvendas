@@ -1,0 +1,33 @@
+{
+  "name": "allos-vendas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "all_OS · Treino de Vendas Allos (ambiente de demonstração)",
+  "scripts": {
+    "server": "node server/index.js",
+    "client": "cd client && npx vite --host",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm install && npx vite build",
+    "start": "node server/index.js",
+    "postinstall": "cd client && npm install",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "3.0.3",
+    "cors": "2.8.6",
+    "dotenv": "17.4.1",
+    "express": "4.22.2",
+    "express-rate-limit": "7.5.1",
+    "helmet": "8.3.0",
+    "jsonwebtoken": "9.0.3",
+    "openai": "6.38.0"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2",
+    "supertest": "7.2.2",
+    "vitest": "2.1.9"
+  }
+}
